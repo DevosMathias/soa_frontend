@@ -1,0 +1,9 @@
+<h2>My groups</h2>
+<ul>
+  <li *ngFor="let group of groups">
+    <span>{{group.id}} </span>
+    <span>{{group.name}} </span>
+    <button (click)="remove(group.id)">Delete</button>
+    <a href="/groupOverview" (click)="remove(group.id)">Delete</a>
+  </li>
+</ul>
