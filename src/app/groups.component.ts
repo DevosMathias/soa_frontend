@@ -28,10 +28,7 @@ export class GroupsComponent implements OnInit {
   }
 
   remove(id): void {
-    console.log('komen we in group component??');
-
     const idData = 'id=' + encodeURIComponent(id);
-
     this.groupService.deleteGroup(idData);
   }
 }

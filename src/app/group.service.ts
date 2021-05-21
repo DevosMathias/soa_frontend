@@ -31,7 +31,6 @@ export class GroupService {
   }
 
   deleteGroup(id): void {
-    console.log('komen we in service??');
     this.http.post(this.deleteGroupUrl, id, {headers: this.formHeaders}).subscribe();
   }
 }
