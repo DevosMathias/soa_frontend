@@ -1,0 +1,25 @@
+<h2>Flight overview</h2>
+
+<table>
+  <th>Id</th>
+  <th>Company</th>
+  <th>FlightNo</th>
+  <th>Date</th>
+  <th>Departure country</th>
+  <th>Arrival country</th>
+  <th></th>
+  <th></th>
+
+  <tr *ngFor="let flight of flights">
+    <td>{{flight.id}}</td>
+    <td>{{flight.company}}</td>
+    <td>{{flight.flightNo}}</td>
+    <td>{{flight.date}}</td>
+    <td>{{flight.departureCountry}}</td>
+    <td>{{flight.arrivalCountry}}</td>
+    <td><a href="/getFlights" (click)="remove(flight.id)">Delete</a></td>
+    <td><a href="/updateFlight?id={{flight.id}}">Update</a></td>
+
+  </tr>
+</table>
+

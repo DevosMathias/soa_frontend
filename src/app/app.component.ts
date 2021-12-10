@@ -6,10 +6,13 @@ import { Component } from '@angular/core';
              <nav>
                <ul>
                  <li>
-                   <a routerLink="/groupOverview">Group overview</a>
+                   <a routerLink="/getFlights">Flights overview</a>
                  </li>
                  <li>
-                   <a routerLink="/addGroupForm">Add group</a>
+                   <a routerLink="/addFlightForm">Add flight</a>
+                 </li>
+                 <li>
+                   <a routerLink="/getCorridors">Corridors overview</a>
                  </li>
                </ul>
              </nav>

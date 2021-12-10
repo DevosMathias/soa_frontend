@@ -1,0 +1,44 @@
+<h2>Add Flight</h2>
+
+  <form [formGroup]="groupForm" (ngSubmit)="onSubmit()">
+
+    <div>
+      <label for="company">
+        Company
+      </label>
+      <input type="text" id="company" formControlName="company">
+    </div>
+
+    <div>
+      <label for="flightNo">
+        FlightNo
+      </label>
+      <input type="text" id="flightNo" formControlName="flightNo">
+    </div>
+
+    <div>
+      <label for="date">
+        Date
+      </label>
+      <input type="text" id="date" formControlName="date">
+    </div>
+
+    <div>
+      <label for="departureCountry">
+        Departure Country
+      </label>
+      <input type="text" id="departureCountry" formControlName="departureCountry">
+    </div>
+
+    <div>
+      <label for="arrivalCountry">
+        Arrival country
+      </label>
+      <input type="text" id="arrivalCountry" formControlName="arrivalCountry">
+    </div>
+
+
+    <button class="button" type="submit">Add flight</button>
+  </form>
+
+

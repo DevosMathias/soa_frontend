@@ -3,17 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {GroupService} from './group.service';
+import {FlightService} from './flight/flight.service';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
-import {GroupsComponent} from './groups.component';
-import {AddGroupsComponent} from './add-group.component';
+import {FlightsComponent} from './flight/flights.component';
+import {AddFlightsComponent} from './add-flight/add-flight.component';
+import {CorridorsComponent} from './corridor/corridors.component';
+import {CorridorService} from './corridor/corridor.service';
+import {UpdateFlightsComponent} from './update-flight/update-flight.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GroupsComponent,
-    AddGroupsComponent
+    FlightsComponent,
+    AddFlightsComponent,
+    CorridorsComponent,
+    UpdateFlightsComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +27,7 @@ import {AddGroupsComponent} from './add-group.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [GroupService],
+  providers: [FlightService, CorridorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

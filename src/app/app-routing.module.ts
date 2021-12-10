@@ -1,11 +1,15 @@
 import {RouterModule, Routes} from '@angular/router';
-import {GroupsComponent} from './groups.component';
+import {FlightsComponent} from './flight/flights.component';
 import {NgModule} from '@angular/core';
-import {AddGroupsComponent} from './add-group.component';
+import {AddFlightsComponent} from './add-flight/add-flight.component';
+import {CorridorsComponent} from './corridor/corridors.component';
+import {UpdateFlightsComponent} from './update-flight/update-flight.component';
 
 const routes: Routes = [
-  {path: 'groupOverview', component: GroupsComponent},
-  {path: 'addGroupForm', component: AddGroupsComponent}
+  {path: 'getFlights', component: FlightsComponent},
+  {path: 'addFlightForm', component: AddFlightsComponent},
+  {path: 'getCorridors', component: CorridorsComponent},
+  {path: 'updateFlight', component: UpdateFlightsComponent}
 ];
 
 

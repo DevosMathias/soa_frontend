@@ -1,0 +1,44 @@
+<h2>Update Flight</h2>
+
+<form [formGroup]="groupForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <label for="company">
+      Company
+    </label>
+    <input type="text" id="company" formControlName="company" [ngModel]="flight.company" ngModel>
+  </div>
+
+  <div>
+    <label for="flightNo">
+      FlightNo
+    </label>
+    <input type="text" id="flightNo" formControlName="flightNo" [ngModel]="flight.flightNo" ngModel>
+  </div>
+
+  <div>
+    <label for="date">
+      Date
+    </label>
+    <input type="text" id="date" formControlName="date" [ngModel]="flight.date" ngModel>
+  </div>
+
+  <div>
+    <label for="departureCountry">
+      Departure Country
+    </label>
+    <input type="text" id="departureCountry" formControlName="departureCountry" [ngModel]="flight.departureCountry" ngModel>
+  </div>
+
+  <div>
+    <label for="arrivalCountry">
+      Arrival country
+    </label>
+    <input type="text" id="arrivalCountry" formControlName="arrivalCountry" [ngModel]="flight.arrivalCountry" ngModel>
+  </div>
+
+
+  <button class="button" type="submit">Update flight</button>
+</form>
+
+
