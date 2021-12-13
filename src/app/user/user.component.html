@@ -1,0 +1,23 @@
+<h2>Users overview</h2>
+
+<table>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Joindate</th>
+  <th>Favorites</th>
+  <th></th>
+  <th></th>
+  <th>Add Favorite Station</th>
+
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.joinDate}}</td>
+    <td [innerHTML]="getLiveBoardLink(user.favoriteStations)"></td>
+    <td><a href="/getUsers" (click)="remove(user.id)">Delete</a></td>
+    <td><a href="/updateUser?id={{user.id}}">Update</a></td>
+    <td><form><input #stationid> <button (click)="addFavorite(user.id, stationid.value)">save</button></form></td>
+
+  </tr>
+</table>
+

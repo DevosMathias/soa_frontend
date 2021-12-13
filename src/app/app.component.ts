@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `<h1>{{title}}</h1>
              <nav>
                <ul>
+                 <h2>Mathias</h2>
                  <li>
                    <a routerLink="/getFlights">Flights overview</a>
                  </li>
@@ -13,6 +14,16 @@ import { Component } from '@angular/core';
                  </li>
                  <li>
                    <a routerLink="/getCorridors">Corridors overview</a>
+                 </li>
+                 <h2>Laurens</h2>
+                 <li>
+                   <a routerLink="/getUsers">User Overview</a>
+                 </li>
+                 <li>
+                   <a routerLink="/addUser">Add User</a>
+                 </li>
+                 <li>
+                   <a routerLink="/liveBoard">LiveBoard</a>
                  </li>
                </ul>
              </nav>

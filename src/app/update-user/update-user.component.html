@@ -1,0 +1,32 @@
+<h2>Update User</h2>
+
+
+
+<form [formGroup]="groupForm" (ngSubmit)="onSubmit()">
+
+  <h3>Updating User: {{User === undefined ? '' : User.name}}</h3>
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input type="text" id="name" formControlName="name" [ngModel]="User.name" >
+  </div>
+
+  <div>
+    <label for="password">
+      Password
+    </label>
+    <input type="password" id="password" formControlName="password">
+  </div>
+
+  <div>
+    <label>
+      Favorites
+    </label>
+    <p>{{User.favoriteStations.join(', ')}}</p>
+  </div>
+  <button >Remove All Favorites</button>
+
+  <button class="button" type="submit">Update User</button>
+</form>

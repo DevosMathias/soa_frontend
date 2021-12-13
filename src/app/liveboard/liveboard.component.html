@@ -1,0 +1,36 @@
+<div>
+  <h1>Liveboard</h1>
+
+
+
+  <div>
+    <h2>Station id: {{stationid}}</h2>
+    <h2>{{stationname}}</h2>
+    <input type="text" id="stationid" #id placeholder="Station id"> <button (click)="getLiveBoard(id.value)">lookup</button>
+  </div>
+
+  <div >
+     <!-- <h3>Station: {{this.liveBoard.station}}</h3>
+    -->
+    <p>Departures: </p>
+    <table>
+      <th>Id</th>
+      <th>Station</th>
+      <th>Time</th>
+      <th>Delay</th>
+      <th>Platform</th>
+
+
+      <tr *ngFor="let departure of this.departures">
+        <td><b>{{departure.id}}</b></td>
+        <td>{{departure.station}}</td>
+        <td>{{timeConverter(departure.time)}}</td>
+        <td>{{departure.delay / 60  + ' min'}}</td>
+        <td>{{departure.platform}}</td>
+      </tr>
+    </table>
+
+  </div>
+
+
+</div>

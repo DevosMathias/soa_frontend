@@ -1,0 +1,21 @@
+<h2>Stations overview</h2>
+
+<table>
+  <th>Id</th>
+  <th>LocationX</th>
+  <th>LocationY</th>
+  <th>name</th>
+  <th></th>
+  <th></th>
+
+  <tr *ngFor="let station of stations">
+    <td>{{station.id}}</td>
+    <td>{{station.locationX}}</td>
+    <td>{{station.locationY}}</td>
+    <td>{{station.name}}</td>
+    <td><a href="/getStations" (click)="remove(station.id)">Delete</a></td>
+    <td><a href="/updateStation?id={{station.id}}">Update</a></td>
+
+  </tr>
+</table>
+

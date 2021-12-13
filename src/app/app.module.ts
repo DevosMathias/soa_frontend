@@ -11,6 +11,12 @@ import {AddFlightsComponent} from './add-flight/add-flight.component';
 import {CorridorsComponent} from './corridor/corridors.component';
 import {CorridorService} from './corridor/corridor.service';
 import {UpdateFlightsComponent} from './update-flight/update-flight.component';
+import { StationComponent } from './station/station.component';
+import { UserComponent } from './user/user.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { LiveboardComponent } from './liveboard/liveboard.component';
+import {CommonModule} from '@angular/common';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +24,20 @@ import {UpdateFlightsComponent} from './update-flight/update-flight.component';
     FlightsComponent,
     AddFlightsComponent,
     CorridorsComponent,
-    UpdateFlightsComponent
+    UpdateFlightsComponent,
+    StationComponent,
+    UserComponent,
+    AddUserComponent,
+    LiveboardComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [FlightService, CorridorService],
   bootstrap: [AppComponent]
