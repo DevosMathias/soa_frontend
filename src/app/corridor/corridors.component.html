@@ -1,13 +1,23 @@
 <h2>Corridor overview</h2>
-<ul>
-  <li *ngFor="let corridor of corridors">
-    <p>Type: {{corridor.$type}} </p>
-    <p>Id: {{corridor.id}} </p>
-    <p>Display name: {{corridor.displayName}} </p>
-    <p>Status severity: {{corridor.statusServerity}} </p>
-    <p>Status severity description: {{corridor.statusSeverityDescription}} </p>
-    <p>bounds: {{corridor.bounds}} </p>
-    <p>envelope: {{corridor.envelope}} </p>
-    <p>url: {{corridor.url}} </p>
-  </li>
-</ul>
+
+<table>
+  <th>Type</th>
+  <th>Id</th>
+  <th>Display name</th>
+  <th>Status severity</th>
+  <th>Status severity description</th>
+  <th>Bounds</th>
+  <th>Envelope</th>
+  <th>Url</th>
+
+  <tr *ngFor="let corridor of corridors">
+    <td>{{corridor.$type}} </td>
+    <td>{{corridor.id}} </td>
+    <td>{{corridor.displayName}} </td>
+    <td>{{corridor.statusServerity}} </td>
+    <td>{{corridor.statusSeverityDescription}} </td>
+    <td>{{corridor.bounds}} </td>
+    <td>{{corridor.envelope}} </td>
+    <td>{{corridor.url}} </td>
+  </tr>
+</table>
