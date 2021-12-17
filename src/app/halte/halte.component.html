@@ -1,0 +1,15 @@
+<h2>Halte overview</h2>
+
+<table>
+  <th>Stop id</th>
+  <th>Stop name</th>
+  <th></th>
+  <th></th>
+
+  <tr *ngFor="let halte of haltes">
+    <td>{{halte.id}}</td>
+    <td>{{halte.halteNaam}}</td>
+    <td><a href="#" (click)="deleteHalte(halte.id)">Delete</a></td>
+    <td><a href="/updateHalte?id={{halte.id}}">Update</a></td>
+  </tr>
+</table>

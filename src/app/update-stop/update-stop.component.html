@@ -1,0 +1,12 @@
+<h2>Update Stop</h2>
+
+<div>
+  <p>Updating stop ID:  {{id}}</p>
+  <label for="stopName">
+    Stop name
+  </label>
+  <input type="text" id="stopName" #busNumber [value]="halte.halteNaam">
+</div>
+<button (click)="onSubmit(busNumber.value)">Update stop</button>
+
+

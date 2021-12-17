@@ -1,0 +1,24 @@
+<h2>Busses overview</h2>
+
+<table>
+  <th>Bus Id</th>
+  <th>Bus Number</th>
+  <th>Bus Stops</th>
+  <th></th>
+  <th></th>
+  <th>Add stop to Bus</th>
+
+  <tr *ngFor="let bus of busses">
+    <td>{{bus.id}}</td>
+    <td>{{bus.busnummer}}</td>
+    <td>
+      <ul>
+      <li *ngFor="let halte of bus.halteLijst"><p>{{halte.halteNaam}} <button (click)="removeHalteFromBus(bus.id, halte.id)">Delete stop from bus</button> </p></li>
+      </ul>
+    </td>
+    <td><a href="#" (click)="deleteBus(bus.id)">Delete</a></td>
+    <td><a href="/updateBus?id={{bus.id}}">Update</a></td>
+    <td><form><input type="number" placeholder="Stop Id" #halteid> <button (click)="addHalteToBus(bus.id, halteid.value)">Add stop</button></form></td>
+
+  </tr>
+</table>

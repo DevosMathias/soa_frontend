@@ -9,6 +9,13 @@ import {AddUserComponent} from './add-user/add-user.component';
 import {Liveboard} from './liveboard/liveboard';
 import {LiveboardComponent} from './liveboard/liveboard.component';
 import {UpdateUserComponent} from './update-user/update-user.component';
+import {TtcstopComponent} from './ttcstop/ttcstop.component';
+import {BusComponent} from './bus/bus.component';
+import {HalteComponent} from './halte/halte.component';
+import {UpdateBusComponent} from './update-bus/update-bus.component';
+import {AddStopComponent} from './add-stop/add-stop.component';
+import {AddBusComponent} from './add-bus/add-bus.component';
+import {UpdateStopComponent} from './update-stop/update-stop.component';
 
 const routes: Routes = [
   {path: 'getFlights', component: FlightsComponent},
@@ -18,7 +25,14 @@ const routes: Routes = [
   {path: 'getUsers', component: UserComponent},
   {path: 'addUser', component: AddUserComponent},
   {path: 'liveBoard', component: LiveboardComponent},
-  {path: 'updateUser', component: UpdateUserComponent}
+  {path: 'updateUser', component: UpdateUserComponent},
+  {path: 'getTTCStop', component: TtcstopComponent},
+  {path: 'getBusses', component: BusComponent},
+  {path: 'getHaltes', component: HalteComponent},
+  {path: 'addBus', component: AddBusComponent},
+  {path: 'addStop', component: AddStopComponent},
+  {path: 'updateBus', component: UpdateBusComponent},
+  {path: 'updateHalte', component: UpdateStopComponent},
 ];
 
 

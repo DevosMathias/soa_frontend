@@ -25,6 +25,22 @@ import { Component } from '@angular/core';
                  <li>
                    <a routerLink="/liveBoard">LiveBoard</a>
                  </li>
+                 <h2>Arno</h2>
+                 <li>
+                   <a routerLink="/getBusses">Busses</a>
+                 </li>
+                 <li>
+                   <a routerLink="/addBus">Add Bus</a>
+                 </li>
+                 <li>
+                   <a routerLink="/getHaltes">Stops</a>
+                 </li>
+                 <li>
+                   <a routerLink="/addStop">Add Stop</a>
+                 </li>
+                 <li>
+                   <a routerLink="/getTTCStop">TTC Stop</a>
+                 </li>
                </ul>
              </nav>
             <router-outlet></router-outlet>`

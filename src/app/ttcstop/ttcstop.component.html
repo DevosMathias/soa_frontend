@@ -1,0 +1,36 @@
+<div>
+  <h1>TTC Stop overview</h1>
+
+
+
+  <div>
+    <label for="stop">Stop name (eg. "36_finch_west")</label>
+    <input type="text" id="stop" #id placeholder="STOP Name"> <button (click)="getStopInfo(id.value)">Lookup</button>
+  </div>
+
+  <div >
+    <!-- <h3>Station: {{this.liveBoard.station}}</h3>
+   -->
+    <p>{{jsonn | json}}</p>
+    <!--
+<table>
+<th>Id</th>
+<th>Station</th>
+<th>Time</th>
+<th>Delay</th>
+<th>Platform</th>
+
+<tr *ngFor="let departure of this.departures">
+  <td><b>{{departure.id}}</b></td>
+  <td>{{departure.station}}</td>
+  <td>{{timeConverter(departure.time)}}</td>
+  <td>{{departure.delay / 60  + ' min'}}</td>
+  <td>{{departure.platform}}</td>
+</tr>
+
+    </table>
+-->
+  </div>
+
+
+</div>

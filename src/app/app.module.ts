@@ -17,6 +17,16 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { LiveboardComponent } from './liveboard/liveboard.component';
 import {CommonModule} from '@angular/common';
 import { UpdateUserComponent } from './update-user/update-user.component';
+import {TtcstopComponent} from './ttcstop/ttcstop.component';
+import {TtcstopService} from './ttcstop/ttcstop.service';
+import {BusService} from './bus/bus.service';
+import {BusComponent} from './bus/bus.component';
+import {HalteService} from './halte/halte.service';
+import {HalteComponent} from './halte/halte.component';
+import {UpdateBusComponent} from './update-bus/update-bus.component';
+import {AddStopComponent} from './add-stop/add-stop.component';
+import {AddBusComponent} from './add-bus/add-bus.component';
+import {UpdateStopComponent} from './update-stop/update-stop.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +39,14 @@ import { UpdateUserComponent } from './update-user/update-user.component';
     UserComponent,
     AddUserComponent,
     LiveboardComponent,
-    UpdateUserComponent
+    UpdateUserComponent,
+    TtcstopComponent,
+    BusComponent,
+    HalteComponent,
+    AddBusComponent,
+    AddStopComponent,
+    UpdateBusComponent,
+    UpdateStopComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +56,7 @@ import { UpdateUserComponent } from './update-user/update-user.component';
     ReactiveFormsModule,
     CommonModule
   ],
-  providers: [FlightService, CorridorService],
+  providers: [FlightService, CorridorService, TtcstopService, BusService, HalteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
