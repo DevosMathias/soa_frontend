@@ -45,7 +45,10 @@ export class FlightService {
   }
 
   updateFlight(id, data): void {
-    this.http.put(this.updateFlightUrl + id, JSON.stringify(data), {headers: this.formHeaders}).subscribe();
+    this.http.put(this.updateFlightUrl + id, JSON.stringify(data), {headers: this.formHeaders}).subscribe(
+      (response) => this.getFlights(),
+      (error) => alert('An error occurred')
+    );
   }
 }
 
