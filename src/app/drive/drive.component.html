@@ -1,0 +1,17 @@
+<h2>Drive Overview</h2>
+
+<table>
+  <th>id</th>
+  <th>locationX</th>
+  <th>locationY</th>
+  <th>driver</th>
+  <th>customer</th>
+
+  <tr *ngFor="let drive of drives">
+    <td>{{drive.id}}</td>
+    <td>{{drive.locationX}}</td>
+    <td>{{drive.locationY}}</td>
+    <td>{{drive.driver}}</td>
+    <td>{{drive.customer}}</td>
+  </tr>
+</table>
