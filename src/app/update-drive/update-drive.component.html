@@ -1,0 +1,36 @@
+<h2>Update Drive</h2>
+
+
+
+<form [formGroup]="groupForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="locationX">
+      LocationX
+    </label>
+    <input type="text" id="locationX" formControlName="locationX">
+  </div>
+
+  <div>
+    <label for="locationY">
+      LocationY
+    </label>
+    <input type="text" id="locationY" formControlName="locationY">
+  </div>
+
+  <div>
+    <label for="driver">
+      Driver
+    </label>
+    <input type="text" id="driver" formControlName="driver">
+  </div>
+
+  <div>
+    <label for="customer">
+      customer
+    </label>
+    <input type="text" id="customer" formControlName="customer">
+  </div>
+
+  <button class="button" type="submit">Update Drive</button>
+
+</form>

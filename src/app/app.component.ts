@@ -41,6 +41,16 @@ import { Component } from '@angular/core';
                  <li>
                    <a routerLink="/getTTCStop">TTC Stop</a>
                  </li>
+                 <h2>Jeroen</h2>
+                 <li>
+                   <a routerLink="/getDrives">Drives</a>
+                 </li>
+                 <li>
+                   <a routerLink="/addDrive">add Drive</a>
+                 </li>
+                 <li>
+                   <a routerLink="/updateDrive">update Drive</a>
+                 </li>
                </ul>
              </nav>
             <router-outlet></router-outlet>`

@@ -16,6 +16,9 @@ import {UpdateBusComponent} from './update-bus/update-bus.component';
 import {AddStopComponent} from './add-stop/add-stop.component';
 import {AddBusComponent} from './add-bus/add-bus.component';
 import {UpdateStopComponent} from './update-stop/update-stop.component';
+import {DriveComponent} from './drive/drive.component';
+import {AddDriveComponent} from './add-drive/add-drive.component';
+import {UpdateDriveComponent} from './update-drive/update-drive.component';
 
 const routes: Routes = [
   {path: 'getFlights', component: FlightsComponent},
@@ -33,6 +36,9 @@ const routes: Routes = [
   {path: 'addStop', component: AddStopComponent},
   {path: 'updateBus', component: UpdateBusComponent},
   {path: 'updateHalte', component: UpdateStopComponent},
+  {path: 'addDrive', component: AddDriveComponent},
+  {path: 'updateDrive', component: UpdateDriveComponent},
+  {path: 'getDrives', component: DriveComponent}
 ];
 
 

@@ -27,6 +27,10 @@ import {UpdateBusComponent} from './update-bus/update-bus.component';
 import {AddStopComponent} from './add-stop/add-stop.component';
 import {AddBusComponent} from './add-bus/add-bus.component';
 import {UpdateStopComponent} from './update-stop/update-stop.component';
+import {DriveComponent} from './drive/drive.component';
+import {AddDriveComponent} from './add-drive/add-drive.component';
+import {UpdateDriveComponent} from './update-drive/update-drive.component';
+import {DriveService} from './drive/drive.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,10 @@ import {UpdateStopComponent} from './update-stop/update-stop.component';
     AddBusComponent,
     AddStopComponent,
     UpdateBusComponent,
-    UpdateStopComponent
+    UpdateStopComponent,
+    DriveComponent,
+    AddDriveComponent,
+    UpdateDriveComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +63,7 @@ import {UpdateStopComponent} from './update-stop/update-stop.component';
     ReactiveFormsModule,
     CommonModule
   ],
-  providers: [FlightService, CorridorService, TtcstopService, BusService, HalteService],
+  providers: [FlightService, CorridorService, TtcstopService, BusService, HalteService, DriveService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
